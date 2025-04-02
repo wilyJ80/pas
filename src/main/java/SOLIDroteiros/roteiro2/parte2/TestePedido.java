@@ -6,19 +6,16 @@ import java.util.List;
 public class TestePedido {
 	public static void main(String[] args) {
 
-		var dl1 = new DescontoLivre(0.1);
-		var dl2 = new DescontoLivre(0.0);
-		var dl3 = new DescontoLivre(0.4);
-
 		List<String> produtos = Arrays.asList("Camiseta", "Calca", "Jaqueta");
 
-		var pedido1 = new PedidoService(produtos, dl1);
-		var pedido2 = new PedidoService(produtos, dl2);
-		var pedido3 = new PedidoService(produtos, dl3);
+		PedidoService services[] = {
+				new PedidoService(produtos, new DescontoLivre(0.1)),
+				new PedidoService(produtos, new DescontoLivre(0.0)),
+				new PedidoService(produtos, new DescontoLivre(0.4))
+		};
 
-		pedido1.processarPedido();
-		pedido2.processarPedido();
-		pedido3.processarPedido();
-
+		for (PedidoService service : services) {
+			service.processarPedido();
+		}
 	}
 }
