@@ -27,7 +27,7 @@ public class PedidoService {
 		return total;
 	}
 
-	public void processarPedido(double desconto) {
+	public void processarPedido() {
 		double valorFinal = regraDesconto.calcular(this.total);
 		System.out.println("Pedido processado. Valor final com desconto: R$" + valorFinal);
 	}
