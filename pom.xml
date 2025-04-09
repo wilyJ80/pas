@@ -57,7 +57,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>SOLIDroteiros.roteiro4.parte1.TestePagamento</mainClass>
+                  <mainClass>SOLIDroteiros.roteiro4.parte2.TestePagamento</mainClass>
                 </transformer>
               </transformers>
             </configuration>
