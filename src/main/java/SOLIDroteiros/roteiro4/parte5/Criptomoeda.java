@@ -7,6 +7,7 @@ public final class Criptomoeda extends Pagamento {
 	}
 
 	@Override
-	public void gerarFatura() {
+	public void validarSaldo() {
+		System.out.println("Validando saldo disponível na carteira de criptomoeda.");
 	}
 }
