@@ -59,7 +59,7 @@
               <transformers>
                 <transformer
                   implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>SOLIDroteiros.roteiro7.parte2.TesteHeranca</mainClass>
+                  <mainClass>SOLIDroteiros.roteiro7.parte3.TesteHeranca</mainClass>
                 </transformer>
               </transformers>
             </configuration>
