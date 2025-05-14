@@ -59,7 +59,7 @@
               <transformers>
                 <transformer
                   implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>PADROESroteiros.roteiro3.parte1.TesteNotificacao</mainClass>
+                  <mainClass>PADROESroteiros.roteiro3.parte2.TesteNotificacao</mainClass>
                 </transformer>
               </transformers>
             </configuration>
