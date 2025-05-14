@@ -1,4 +1,4 @@
-package PADROESroteiros.parte4;
+package PADROESroteiros.roteiro1.parte4;
 
 public class TesteJogo {
 

@@ -1,4 +1,4 @@
-package PADROESroteiros.parte2;
+package PADROESroteiros.roteiro1.parte2;
 
 public abstract class Player {
 

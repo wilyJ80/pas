@@ -1,4 +1,4 @@
-package PADROESroteiros.parte1;
+package PADROESroteiros.roteiro1.parte1;
 
 public class TennisPlayer extends Player {
 

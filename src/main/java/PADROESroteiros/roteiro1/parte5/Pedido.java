@@ -1,4 +1,4 @@
-package PADROESroteiros.parte5;
+package PADROESroteiros.roteiro1.parte5;
 
 public abstract class Pedido {
 	private double valor;
