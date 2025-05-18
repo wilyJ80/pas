@@ -23,4 +23,9 @@ public class Newsletter {
 			observer.update(mensagem);
 		}
 	}
+
+	public ArrayList<Observer> getObservers() {
+		return observers;
+	}
+
 }

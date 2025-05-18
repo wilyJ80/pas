@@ -7,4 +7,9 @@ public class NotificacaoSMS implements NotificacaoStrategy {
 		System.out.println("--------------------------");
 		System.out.println("SMS enviado para " + destinatario + ": \n" + mensagem);
 	}
+
+	@Override
+	public String toString() {
+		return "NotificacaoSMS []";
+	}
 }

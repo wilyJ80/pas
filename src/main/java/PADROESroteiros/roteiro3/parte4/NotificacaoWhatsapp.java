@@ -7,4 +7,9 @@ public class NotificacaoWhatsapp implements NotificacaoStrategy {
 		System.out.println("--------------------------");
 		System.out.println("WhatsApp enviado para " + destinatario + ": \n" + mensagem);
 	}
+
+	@Override
+	public String toString() {
+		return "NotificacaoWhatsapp []";
+	}
 }

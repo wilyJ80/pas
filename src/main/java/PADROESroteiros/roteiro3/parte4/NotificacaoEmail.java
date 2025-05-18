@@ -7,4 +7,9 @@ public class NotificacaoEmail implements NotificacaoStrategy {
 		System.out.println("--------------------------");
 		System.out.println("Email enviado para " + destinatario + ": \n" + mensagem);
 	}
+
+	@Override
+	public String toString() {
+		return "NotificacaoEmail []";
+	}
 }

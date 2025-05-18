@@ -16,14 +16,23 @@ public class Fornecedor implements Observer {
 
 	@Override
 	public void update(String mensagem) {
-		System.out.println("------------ NOTIFICACAO FORNECEDOR ----------");
-		System.out.println("Email enviado para " + nome + "(" + email + ")");
-		System.out.println("Mensagem: " + mensagem);
-		System.out.println("----------------------");
+		String destinatario = (estrategiaNotificacao instanceof NotificacaoEmail) ? email : nome;
+
+		var mensagemFormatada = new StringBuilder();
+		mensagemFormatada.append("----- NOTIFICACAO" + getTipoObserver() + "------\n");
+		mensagemFormatada.append("Notificacao enviada para " + nome + " (" + destinatario + ")\n");
+		mensagemFormatada.append("------------------------\n");
+
+		this.estrategiaNotificacao.enviarMensagem(destinatario, mensagemFormatada.toString());
 	}
 
 	@Override
 	public String getTipoObserver() {
 		return "FORNECEDOR";
 	}
+
+	public void setEstrategiaNotificacao(NotificacaoStrategy estrategiaNotificacao) {
+		this.estrategiaNotificacao = estrategiaNotificacao;
+	}
+
 }
