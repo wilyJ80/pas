@@ -1,9 +1,8 @@
-package PADROESroteiros.roteiro7.parte2;
+package PADROESroteiros.roteiro7.parte3;
 
 public class TesteBoleto {
 	public static void main(String[] args) {
-		BoletoSimpleFactory factory = new BoletoSimpleFactory();
-		BancoCaixa banco = new BancoCaixa(factory);
+		BancoCaixa banco = new BancoCaixa();
 		try {
 			banco.gerarBoleto(10, 100);
 			banco.gerarBoleto(30, 100);
