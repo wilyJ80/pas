@@ -1,4 +1,4 @@
-package PADROESroteiros.roteiro9.parte1;
+package PADROESroteiros.roteiro9.parte2;
 
 public class Boleto {
 	protected double valor;
@@ -7,7 +7,6 @@ public class Boleto {
 	protected Multa multa;
 
 	public Boleto(double valor, CalculosFactory factory) {
-		this.valor = valor;
 		this.juros = factory.criarJuros();
 		this.desconto = factory.criarDesconto();
 		this.multa = factory.criarMulta();
