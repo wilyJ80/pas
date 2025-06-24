@@ -33,7 +33,7 @@
               <transformers>
                 <transformer
                   implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>PADROESroteiros.roteiro7.parte3.TesteBoleto</mainClass>
+                  <mainClass>PADROESroteiros.roteiro10.parte2.TesteUsuario</mainClass>
                 </transformer>
               </transformers>
             </configuration>
